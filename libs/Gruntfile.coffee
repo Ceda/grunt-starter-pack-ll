@@ -51,9 +51,18 @@ module.exports = (grunt) ->
         options:
           livereload: true
 
+      slim:
+        files: "<%= public_path %>/*.slim"
+        tasks: ["slim:dev"]
+
       less:
         files: "<%= public_path %>/less/*.less"
         tasks: ["less", "csscomb"]
+
+      sass:
+        files: "<%= public_path %>/sass/*.{scss,sass}"
+        tasks: ["sass:development"]
+
 
     uglify:
       scripts:
@@ -69,6 +78,29 @@ module.exports = (grunt) ->
         files:
           "<%= public_path %>/src/coffee.js": "<%= public_path %>/coffee/*.coffee"
 
+    sass:
+      development:
+        options:
+          style: 'expanded'
+          loadPath: ["/Users/ceda/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/"]
+        files:
+          "<%= public_path %>/assets/css/style.css": "<%= public_path %>/sass/style.sass"
+
+      production:
+        options:
+          style: 'compressed',
+          compass: true
+      
+        files:
+          "<%= public_path %>/assets/css/style.min.css": "<%= public_path %>/sass/style.scss"
+
+    slim:
+      dev:
+        options:
+          pretty: true
+        files:
+          "<%= public_path %>/index.html": "<%= public_path %>/index.slim"
+        
     less:
       development:
         options:
