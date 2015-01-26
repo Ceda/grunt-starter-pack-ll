@@ -1,0 +1,3 @@
+libs/node_modules/*
+libs/.sass_cache/*
+bower_components/*

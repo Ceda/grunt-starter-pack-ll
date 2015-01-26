@@ -1,16 +1,325 @@
 doctype html
 html
   head
-    title Slim Examples
+    title Apartmany Lipno Canada
     meta name="keywords" content="template language"
     meta name="author" content="author"
     link href="/assets/css/style.css" rel="stylesheet" 
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript" 
+    script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrd0ILJVBh5WY6aU-zoe2AuxuYM8g6jsc&sensor=false" type="text/javascript" 
+    script src="/assets/js/bootstrap.js" type="text/javascript" 
+    script src="/assets/js/jquery.bxslider.js" type="text/javascript" 
+    script src="/assets/js/scripts.min.js" type="text/javascript" 
 
   body
-    .container
-      h1 Markup examples
+    header#top.navbar.navbar-fixed-top.navbar-default role="banner" 
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed data-target=".menu-collapse" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="../"  Bootstrap
+        nav.collapse.navbar-collapse.menu-collapse
+          ul.nav.navbar-nav
+            li
+              a href="#" O nás 
+            li
+              a href="#" Aktivity
+            li
+              a href="#" Okolí
+            li
+              a href="#" Cenik
+            li
+              a href="#" Fotografie
+            li
+              a href="#" Rezervace
+            li
+              a href="#" Kontaktujte nás
+                
+    section.slider#slider
+      ul.main-slider
+        li
+          h2
+            | apartmán lipno canada 
+            span Aktivni dovolena po cely rok
+          img src="/assets/img/slider-img.jpg" /
+        li
+          h2
+            | apartmán lipno canada 
+            span Aktivni dovolena po cely rok
+          img src="/assets/img/slider-img-2.jpg" /
+        li
+          h2
+            | apartmán lipno canada 
+            span Aktivni dovolena po cely rok
+          img src="/assets/img/slider-img.jpg" /
+    
+    section
+      .container
+        p.claim Náš apartmán najdete v blízkosti centra obce, v překrásném komplexu „Rezidence Club Canada“ vybaveném vlastní kavárnou a restaurací s dětským koutkem, fitness, saunou a vířivkou. Všechny tyto služby můžete využít aniž by jste museli opustit Rezidenci a večer posedět třeba v kavárně, když vaše ratolesti spí jen o patro výš, hlídané elektronickou chůvičkou. Rezidence Club Canada působí velmi příjemným, uspořádaným a útulným dojmem uspokojujícím vysoké nároky, kde se budete cítit jako doma.
+        .row
+          .col-md-4
+            img src="/assets/img/acco-1.jpg" /
+          .col-md-4
+            img src="/assets/img/acco-2.jpg" /
+          .col-md-4
+            img src="/assets/img/acco-1.jpg" /
+        .row
+          .col-md-12
+            h4 
+              | Vybavení 
+              span apartmánu:
+            ul
+              li  Předsíň s vestavěnými skříněmi 
+              li  Kuchyňka – lednička, mikrovlnná trouba, keramická varná deska, digestoř, rychlovarná konvice, nádobí pro 4 osoby.
+              li  Stůl a židle pro 4 osoby + dětská jídelní židlička, pevné postele pro 4 osoby,  LCD TV Sony a DVD přehrávač.
+              li  Koupelna se sprchovým koutem + WC a podlahovým vytápěním.
+              li  Samozřejmostí je toaletní papír, mýdlo, utěrka, jar a houbičky na nádobí.
+              li  K ubytování nabízíme zapůjčení lůžkovin (ložní prádlo, osuška, ručník, koupelnová předložka) za 150,- Kč/osobu.
+              li  Po předchozí domluvě si můžete přivézt vlastní.
+        .row
+          .col-md-4
+            img src="/assets/img/acco-2.jpg" /
+          .col-md-4
+            img src="/assets/img/acco-1.jpg" /
+          .col-md-4
+            img src="/assets/img/acco-2.jpg" /
+          .col-md-12
+              a.btn.btn-lg.btn-primary href="#" Zobrazit celou fotogalerii
 
-      #content
-        p This example shows you how a basic Slim file looks like.
+    section
+      .container
+        .row
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-2.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+      
+    section
+      .container
+        .row
+          .col-md-12
+            h2 
+              | Aktivity 
+              span na lipně
+            p.text-center 
+              Nejbližší prodejna potravin se nachází asi 50 metrů od Rezidence. Stravování a další služby je možné domluvit na recepci.
+              Všechny aktivity jsou na dosah.
+              Například hlavní promenáda, Aquapark, nebo písčitá pláž se nacházejí hned pod Rezidencí Club Canada.
+              Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+              Je vás víc? Můžeme Vám za stejných podmínek zajistit vedlejší apartmán, pokud bude v daném termínu volný.
+              Pobyt psů a jiných zvířat je v apartmánu zakázán. Apartmán je nekuřácký.
+                 
+    section.lgray
+      .container
+        .row
+          .col-md-4
+            h3 Sport na Lipně
+            img src="/assets/img/acti-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 Památky v okolí Lipna
+            img src="/assets/img/acti-2.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 Ubytování na Lipně
+            img src="/assets/img/acti-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+      
+    section
+      .container
+        .row
+          .col-md-12
+            h2 
+              | Fotografie 
+              span apartmanu
 
-      div#footer
+    section.lgray
+      .container
+        .row
+          .col-md-12
+            h2 
+              | Okolí 
+              span apartmanu
+          .col-md-4
+            h3 Sport na Lipně
+            img src="/assets/img/acti-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+            a.big-primary-btn.btn-block href="#" Zobrazit obsazenost
+          .col-md-4
+            h3 Památky v okolí Lipna
+            img src="/assets/img/acti-2.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+            a.big-primary-btn.btn-block href="#" Zobrazit obsazenost
+          .col-md-4
+            h3 Ubytování na Lipně
+            img src="/assets/img/acti-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+            a.big-primary-btn.btn-block href="#" Zobrazit obsazenost
+
+    section
+      .container
+        h2 
+          | Ceník 
+          span ubytování
+        .row
+          .col-md-8.col-md-offset-2
+            table.table
+              tr
+                td 
+                td Datum
+                td Cona bez lůžkovin
+                td Cena vč. lůzkovin
+              tr
+                td Zimní sezóna
+                td 
+                  | (5.1. – 8.3.)
+                td 1900 Kč/noc
+                td 1700 Kč/noc
+              tr
+                td Letní sezóna
+                td 
+                  | (28.6. – 31.8.)
+                td 1900 Kč/noc
+                td 1700 Kč/noc
+              tr
+                td Top sezóna
+                td 
+                  | (21.12. - 4.1.)
+                td 2800 Kč/noc
+                td 2600 Kč/noc
+              tr
+                td Mimosezóna
+                td 
+                  | (9.3. – 27.6.)
+                td 1400 Kč/noc
+                td 1300 Kč/noc
+          
+        p.text-center Rezervace se stává závaznou po zaplacení zálohy ve výši 50 % z celkové ceny pobytu. Pobyt možný minimálně na 2 noci. Při pobytu na 2 a 3 noci je nutná platba celého pobytu předem. Při příjezdu se platí zbytek ceny nájemného a vratná kauce ve výši 2 000 Kč. Při zrušení ubytování méně než 14 dní před dovolenou je účtován storno poplatek ve výši 50 % zálohy. Při zrušení ubytování méně než 7 dní před příjezdem záloha propadá.  
+            
+        h2 
+          | Služby zahrnuty 
+          span v ceně pobytu: 
+        .row.text-center
+          .col-md-2
+             i.icon-depository
+             p Stojany na lyže a kola ve vestibulu – monitorovány kamerovým systémem.
+          .col-md-2
+             i.icon-fitness
+             p Vstup do fitness (hrací prvky pro děti).
+          .col-md-2
+             i.icon-car
+             p Parkování před vchodem, hlídané kamerovým systémem.
+          .col-md-2
+             i.icon-cleanup
+             p V ceně není zahrnut závěrečný úklid 200,- Kč /apartmán (povinný poplatek).
+          .col-md-2
+             i.icon-wifi
+             p Wi-Fi připojení k internetu.
+          .col-md-2
+             i.icon-wallet
+             p Turistické poplatky obci.
+
+
+    section.lgray
+      .container
+        h2 
+          | Rezervace 
+          span ubytování
+        form
+          .row
+            .col-md-4
+              input.form-control placeholder="Jméno a přijmení"
+            .col-md-4
+              input.form-control placeholder="Telefoní číslo"
+            .col-md-4
+              input.form-control placeholder="E-mailova adresa"
+          .row
+            .col-md-3
+              input.form-control placeholder="Počet dospělých"
+            .col-md-3
+              input.form-control placeholder="Počet dětí"
+            .col-md-6
+              input.form-control placeholder="Bydliště"
+          .row
+            .col-md-4
+              input.form-control placeholder="Začátek pobytu"
+            .col-md-4
+              input.form-control placeholder="Konec pobytu"
+            .col-md-4
+              a href="#" Zobrazit dostupnost
+          .row
+            .col-md-8
+              textarea.form-control placeholder="Začátek pobytu"
+            .col-md-4
+              input.big-primary-btn type="submit" value="Rezervovat ubytováni"
+        
+    section
+      .container
+        h2 
+          | Apartmány lipno 
+          span canada Kontakty
+        .row
+          .col-md-4
+            h3 Adreasa ubytování
+            p 
+              | Rezidence Club Canada s.r.o.
+              | Lipno nad Vltavou 25, 382 78
+              | Česká Republika
+          .col-md-4
+            img.img-responsive.center-block src="/assets/img/portrait-2.png"
+          .col-md-4
+            h3 Rezervace ubytování
+
+            p 
+              | Michal Maxa
+              | Tel: +420605455 455
+              | E-mail: lipnomaxa@centrum.cz
+        
+        
+    section.lgray
+      .container
+        h2 
+          | Naopište 
+          span nám
+        form
+          .row
+            .col-md-4
+              input.form-control placeholder="Jméno a přijmení"
+            .col-md-4
+              input.form-control placeholder="Emailova adresa"
+            .col-md-4
+              input.form-control placeholder="Telefon"
+          .row
+            .col-md-12
+              textarea.form-control placeholder="Zadejte vas dotaz"
+          .row
+            .col-md-12
+              input.big-primary-btn type="submit" value="Odeslat"
+        
+        
+
+    footer
+      .container
+        .row
+          .col-md-6
+            p Copyright © 2015 Apartman Lipno Canada - All rights reserved.
+          .col-md-6
+            p Design and realization by Ceda_
+      

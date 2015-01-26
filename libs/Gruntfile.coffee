@@ -21,11 +21,6 @@ module.exports = (grunt) ->
           base: "<%= public_path %>"
           
     watch:
-      img:
-        files: "<%= public_path %>/assets/img/*.*"
-        tasks: "imagemin"
-        options:
-          livereload: true
 
       js:
         files: "<%= public_path %>/assets/js/*.js"

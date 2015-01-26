@@ -1,0 +1,68 @@
+{
+  "checksum": {
+    "previous": "27638d306e170b396572400d9d9d9e887fffb9b1c3b07de917d6c2cda3ca78fb",
+    "current": "27638d306e170b396572400d9d9d9e887fffb9b1c3b07de917d6c2cda3ca78fb"
+  },
+  "fonts": [
+    "assets/font/canada.ttf",
+    "assets/font/canada.svg",
+    "assets/font/canada.woff",
+    "assets/font/canada.eot"
+  ],
+  "glyphs": {
+    "car": {
+      "codepoint": 61696,
+      "source": "icons/car.svg"
+    },
+    "cleanup": {
+      "codepoint": 61697,
+      "source": "icons/cleanup.svg"
+    },
+    "depository": {
+      "codepoint": 61698,
+      "source": "icons/depository.svg"
+    },
+    "fitness": {
+      "codepoint": 61699,
+      "source": "icons/fitness.svg"
+    },
+    "wallet": {
+      "codepoint": 61700,
+      "source": "icons/wallet.svg"
+    },
+    "wifi": {
+      "codepoint": 61701,
+      "source": "icons/wifi.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "canada",
+    "force": false,
+    "input": {
+      "templates": "icons",
+      "vectors": "icons"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "assets/font",
+      "fonts": "assets/font",
+      "preview": "assets/font"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css"
+    ]
+  },
+  "templates": [
+    "assets/font/canada.css"
+  ]
+}
