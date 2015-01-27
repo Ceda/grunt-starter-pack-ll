@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "27638d306e170b396572400d9d9d9e887fffb9b1c3b07de917d6c2cda3ca78fb",
-    "current": "27638d306e170b396572400d9d9d9e887fffb9b1c3b07de917d6c2cda3ca78fb"
+    "previous": "652af14d2e92bab07922ccc918ba12cd065fe843e34049c7d8aacecb6438baea",
+    "current": "652af14d2e92bab07922ccc918ba12cd065fe843e34049c7d8aacecb6438baea"
   },
   "fonts": [
     "assets/font/canada.ttf",
@@ -14,6 +14,14 @@
       "codepoint": 61696,
       "source": "icons/car.svg"
     },
+    "chevron-left": {
+      "codepoint": 61702,
+      "source": "icons/chevron-left.svg"
+    },
+    "chevron-right": {
+      "codepoint": 61703,
+      "source": "icons/chevron-right.svg"
+    },
     "cleanup": {
       "codepoint": 61697,
       "source": "icons/cleanup.svg"
@@ -25,6 +33,10 @@
     "fitness": {
       "codepoint": 61699,
       "source": "icons/fitness.svg"
+    },
+    "square": {
+      "codepoint": 61704,
+      "source": "icons/square.svg"
     },
     "wallet": {
       "codepoint": 61700,
@@ -45,7 +57,7 @@
     "font_design_size": 16,
     "font_em": 512,
     "font_name": "canada",
-    "force": false,
+    "force": true,
     "input": {
       "templates": "icons",
       "vectors": "icons"

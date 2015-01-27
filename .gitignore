@@ -1,3 +1,5 @@
-libs/node_modules/*
-libs/.sass_cache/*
+.DS_Store
+libs/*
+!libs/Gruntfile.coffee
+!libs/package.json
 bower_components/*

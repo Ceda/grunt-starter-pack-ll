@@ -24,9 +24,12 @@
 
 [data-icon]:before,
 .icon-car:before,
+.icon-chevron-left:before,
+.icon-chevron-right:before,
 .icon-cleanup:before,
 .icon-depository:before,
 .icon-fitness:before,
+.icon-square:before,
 .icon-wallet:before,
 .icon-wifi:before {
   display: inline-block;
@@ -44,8 +47,11 @@
 }
 
 .icon-car:before { content: "\f100"; }
+.icon-chevron-left:before { content: "\f106"; }
+.icon-chevron-right:before { content: "\f107"; }
 .icon-cleanup:before { content: "\f101"; }
 .icon-depository:before { content: "\f102"; }
 .icon-fitness:before { content: "\f103"; }
+.icon-square:before { content: "\f108"; }
 .icon-wallet:before { content: "\f104"; }
 .icon-wifi:before { content: "\f105"; }

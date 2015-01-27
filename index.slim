@@ -71,7 +71,7 @@ html
             h4 
               | Vybavení 
               span apartmánu:
-            ul
+            ul.square
               li  Předsíň s vestavěnými skříněmi 
               li  Kuchyňka – lednička, mikrovlnná trouba, keramická varná deska, digestoř, rychlovarná konvice, nádobí pro 4 osoby.
               li  Stůl a židle pro 4 osoby + dětská jídelní židlička, pevné postele pro 4 osoby,  LCD TV Sony a DVD přehrávač.
@@ -149,6 +149,44 @@ html
             h2 
               | Fotografie 
               span apartmanu
+
+          .col-md-10.col-md-offset-1
+            #sliderBigReal
+              ul
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+                li
+                  img src="/assets/img/gallery-photo.jpg" /
+
+            #sliderThumbReal
+              ul
+                li.active slideindex="0" 
+                  a href="#" 
+                    img src="/assets/img/thumb-1.jpg" /
+                li slideindex="1" 
+                  a href="#" 
+                    img src="/assets/img/thumb-2.jpg" /
+                li slideindex="2" 
+                  a href="#" 
+                    img src="/assets/img/thumb-1.jpg" /
+                li slideindex="3" 
+                  a href="#" 
+                    img src="/assets/img/thumb-2.jpg" /
+                li slideindex="4" 
+                  a href="#" 
+                    img src="/assets/img/thumb-1.jpg" /
+                li slideindex="5" 
+                  a href="#" 
+                    img src="/assets/img/thumb-2.jpg" /
+              
 
     section.lgray
       .container
@@ -263,7 +301,7 @@ html
             .col-md-4
               input.form-control placeholder="Konec pobytu"
             .col-md-4
-              a href="#" Zobrazit dostupnost
+              a.big-primary-btn href="#" Zobrazit dostupnost
           .row
             .col-md-8
               textarea.form-control placeholder="Začátek pobytu"
