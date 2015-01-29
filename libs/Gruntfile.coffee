@@ -56,7 +56,7 @@ module.exports = (grunt) ->
 
       sass:
         files: "<%= public_path %>/sass/*.{scss,sass}"
-        tasks: ["sass:development"]
+        tasks: ["sass:development", "autoprefixer"]
 
 
     uglify:
@@ -118,6 +118,13 @@ module.exports = (grunt) ->
         files:
           "<%= public_path %>/assets/css/style.min.css": "<%= public_path %>/less/style.less"
 
+    autoprefixer:
+      options:
+        browsers: ['> 1%', 'last 2 versions','Firefox ESR','Opera 12.1']
+      dist:
+        files:
+          "<%= public_path %>/assets/css/style.css": "<%= public_path %>/assets/css/style.css"
+    
     csscomb:
       sort:
         options:

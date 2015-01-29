@@ -43,3 +43,36 @@ $controls: url("images/controls.png")
       
       &.disabled 
         display: none
+
+#sliderThumbReal
+  .bx-prev 
+    left: 0
+
+  .bx-next 
+    right: 0
+  
+  .bx-controls-direction 
+    position: relative
+    top: -85px
+    a 
+      background: $gray-extra-light
+      position: absolute
+      top: 0
+      margin-top: 0
+      line-height: 80px
+      outline: 0
+      width: 20px
+      height: 75px
+      z-index: 9999
+      font-family: "canada"
+      font-size: 20px
+      opacity: .5
+      color: $dblue
+
+      &:hover,
+      &:focus
+        text-decoration: none !important
+        opacity: 1
+  
+      &.disabled 
+        display: none
