@@ -42,7 +42,7 @@
     };
     $("nav a").click(function(e) {
       $("html, body").animate({
-        scrollTop: $($(this).attr("href")).offset().top - 80
+        scrollTop: $($(this).attr("href")).offset().top - 60
       }, 700);
       return setHashURL($(this).attr("href"));
     });

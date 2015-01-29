@@ -34,7 +34,7 @@ $(document).on 'ready page:load', ->
 
   $("nav a").click (e) ->
     $("html, body").animate
-      scrollTop: $($(this).attr("href")).offset().top - 80
+      scrollTop: $($(this).attr("href")).offset().top - 60
     , 700
     setHashURL $(this).attr("href")
 
