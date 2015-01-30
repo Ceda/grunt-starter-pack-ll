@@ -19,6 +19,10 @@ $(window).bind "load", ->
 
 $(document).on 'ready page:load', ->  
 
+  if $('a.lightbox').length > 0
+    $('a.lightbox').nivoLightbox();
+
+  
   if $("#map").length > 0
     coord = $("#map").data()
     google.maps.event.addDomListener window, "load", LoadDynamicMap(coord.lat, coord.lon)
