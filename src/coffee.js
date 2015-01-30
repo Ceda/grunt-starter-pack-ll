@@ -26,6 +26,18 @@
 
   $(document).on('ready page:load', function() {
     var coord, realSlider, realThumbSlider, setHashURL, updateScrollSpy;
+    $(".navbar-brand").click(function(e) {
+      e.preventDefault();
+      return $("html,body").animate({
+        scrollTop: 0
+      }, 500);
+    });
+    $(".show-gallery").click(function(e) {
+      e.preventDefault();
+      return $("html,body").animate({
+        scrollTop: $("#fotogalerie").offset().top - 90
+      }, 500);
+    });
     if ($('a.lightbox').length > 0) {
       $('a.lightbox').nivoLightbox();
     }
@@ -44,6 +56,7 @@
       return newURL = url.substr(url.indexOf("#") + 1);
     };
     $("nav a").click(function(e) {
+      e.preventDefault();
       $("html, body").animate({
         scrollTop: $($(this).attr("href")).offset().top - 60
       }, 700);

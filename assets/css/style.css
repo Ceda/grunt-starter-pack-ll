@@ -7269,6 +7269,10 @@ button.close {
   opacity: 1;
 }
 
+* {
+  outline: none !important;
+}
+
 body {
   position: relative;
 }

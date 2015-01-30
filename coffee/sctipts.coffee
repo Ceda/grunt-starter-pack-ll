@@ -19,10 +19,23 @@ $(window).bind "load", ->
 
 $(document).on 'ready page:load', ->  
 
+  $(".navbar-brand").click (e) ->
+    e.preventDefault()
+    $("html,body").animate
+      scrollTop: 0
+    , 500
+    
+    
+  $(".show-gallery").click (e) ->
+    e.preventDefault()
+    $("html,body").animate
+      scrollTop: $("#fotogalerie").offset().top - 90
+    , 500
+  
+  
   if $('a.lightbox').length > 0
     $('a.lightbox').nivoLightbox();
 
-  
   if $("#map").length > 0
     coord = $("#map").data()
     google.maps.event.addDomListener window, "load", LoadDynamicMap(coord.lat, coord.lon)
@@ -37,6 +50,7 @@ $(document).on 'ready page:load', ->
     # window.location.hash = newURL
 
   $("nav a").click (e) ->
+    e.preventDefault()
     $("html, body").animate
       scrollTop: $($(this).attr("href")).offset().top - 60
     , 700
