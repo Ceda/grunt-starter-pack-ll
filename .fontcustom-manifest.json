@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "652af14d2e92bab07922ccc918ba12cd065fe843e34049c7d8aacecb6438baea",
-    "current": "652af14d2e92bab07922ccc918ba12cd065fe843e34049c7d8aacecb6438baea"
+    "previous": "80b8ba57582836dce2dc2e007d899fc0f1851a6de0c19439c05a208d53df8169",
+    "current": "80b8ba57582836dce2dc2e007d899fc0f1851a6de0c19439c05a208d53df8169"
   },
   "fonts": [
     "assets/font/canada.ttf",
@@ -10,6 +10,10 @@
     "assets/font/canada.eot"
   ],
   "glyphs": {
+    "calendar": {
+      "codepoint": 61705,
+      "source": "icons/calendar.svg"
+    },
     "car": {
       "codepoint": 61696,
       "source": "icons/car.svg"

@@ -7434,6 +7434,19 @@ ul.square li:before {
   font-size: 25px;
   padding: 30px 16px;
 }
+.booking-form .input-group {
+  margin-top: 10px;
+}
+.booking-form .input-group .form-control {
+  margin-top: 0;
+}
+.booking-form .input-group .input-group-addon {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+  border: 0;
+}
+.booking-form .input-group .input-group-addon i {
+  font-size: 20px;
+}
 
 .contact-form .big-primary-btn {
   font-size: 22px;
