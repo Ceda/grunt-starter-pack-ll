@@ -30,11 +30,11 @@ html
             li
               a href="#aktivity" Aktivity
             li
+              a href="#fotogalerie" Fotografie
+            li
               a href="#okoli" Okolí
             li
               a href="#cenik" Cenik
-            li
-              a href="#fotogalerie" Fotografie
             li
               a href="#rezervace" Rezervace
             li
@@ -102,28 +102,6 @@ html
           .col-md-12.text-center
               a.big-primary-btn.show-gallery href="#" Zobrazit celou fotogalerii
 
-    section#nevim
-      .container
-        .row
-          .col-md-4
-            h3 
-              | Sportovní 
-              span aktivity
-            img src="/assets/img/acco-1.jpg" /
-            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-          .col-md-4
-            h3 
-              | Sportovní 
-              span aktivity
-            img src="/assets/img/acco-2.jpg" /
-            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-          .col-md-4
-            h3 
-              | Sportovní 
-              span aktivity
-            img src="/assets/img/acco-1.jpg" /
-            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-      
     section#aktivity
       .container
         .row
@@ -144,7 +122,28 @@ html
               Je vás víc? Můžeme Vám za stejných podmínek zajistit vedlejší apartmán, pokud bude v daném termínu volný. 
               br /
               Pobyt psů a jiných zvířat je v apartmánu zakázán. Apartmán je nekuřácký. 
-                 
+
+      .container
+        .row
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-2.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+          .col-md-4
+            h3 
+              | Sportovní 
+              span aktivity
+            img src="/assets/img/acco-1.jpg" /
+            p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
+
     section.lgray#sport
       .container
         .row
@@ -160,7 +159,8 @@ html
             h3 Ubytování na Lipně
             img src="/assets/img/acti-1.jpg" /
             p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-      
+
+
     section#fotogalerie
       .container
         .row
@@ -238,7 +238,7 @@ html
             h3 Sport na Lipně
             img src="/assets/img/acti-1.jpg" /
             p Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-            a.big-primary-btn.btn-block href="#" Zobrazit obsazenost
+            a.big-primary-btn.btn-block  Zobrazit obsazenost
           .col-md-4
             h3 Památky v okolí Lipna
             img src="/assets/img/acti-2.jpg" /
@@ -298,18 +298,13 @@ html
         h3.text-center 
           | Storno 
           span podmínky
-        p.text-center.storno 
-          | Rezervace se stává závaznou po zaplacení zálohy ve výši 50 % z celkové ceny pobytu. 
-          br
-          | Pobyt možný minimálně na 2 noci. 
-          br
-          | Při pobytu na 2 a 3 noci je nutná platba celého pobytu předem. 
-          br
-          | Při příjezdu se platí zbytek ceny nájemného a vratná kauce ve výši 2 000 Kč. 
-          br
-          | Při zrušení ubytování méně než 14 dní před dovolenou je účtován storno poplatek ve výši 50 % zálohy. 
-          br
-          | Při zrušení ubytování méně než 7 dní před příjezdem záloha propadá.  
+        ul.square.storno 
+          li Rezervace se stává závaznou po zaplacení zálohy ve výši 50 % z celkové ceny pobytu. 
+          li Pobyt možný minimálně na 2 noci. 
+          li Při pobytu na 2 a 3 noci je nutná platba celého pobytu předem. 
+          li Při příjezdu se platí zbytek ceny nájemného a vratná kauce ve výši 2 000 Kč. 
+          li Při zrušení ubytování méně než 14 dní před dovolenou je účtován storno poplatek ve výši 50 % zálohy. 
+          li Při zrušení ubytování méně než 7 dní před příjezdem záloha propadá.  
             
         h2 
           | Služby zahrnuty 
@@ -357,11 +352,17 @@ html
               input.form-control placeholder="Bydliště"
           .row
             .col-md-4
-              input.form-control placeholder="Začátek pobytu"
+              .input-group
+                input.form-control placeholder="Začátek pobytu"
+                span  class="input-group-addon"
+                  i.icon-cleanup
             .col-md-4
-              input.form-control placeholder="Konec pobytu"
+              .input-group
+                input.form-control placeholder="Konec pobytu"
+                span  class="input-group-addon"
+                  i.icon-cleanup
             .col-md-4
-              a.big-info-btn.btn-block href="#" Zobrazit dostupnost
+              a.lightbox.big-info-btn.btn-block href="#obsazenost" data-lightbox-type="inline" Zobrazit dostupnost
           .row
             .col-md-8
               textarea.form-control placeholder="Začátek pobytu"
@@ -434,4 +435,963 @@ html
             p Copyright © 2015 Apartman Lipno Canada - All rights reserved.
           .col-md-6
             p.text-right Design and realization by Ceda_
+
+#obsazenost.booking-calendar style="display: none"       
+  h2 
+    | Přehled 
+    span volných termínů
+  .row
+    .col-md-3
+      h3 Leden
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a.reserved href="#" 10
+          td 
+            a.reserved href="#" 11
+          td 
+            a.reserved href="#" 12
+          td 
+            a.reserved href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a.reserved href="#" 16
+          td 
+            a.reserved href="#" 17
+          td 
+            a.reserved href="#" 18
+          td 
+            a.reserved href="#" 19
+          td 
+            a.reserved href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a.reserved href="#" 26
+          td 
+            a.reserved href="#" 27
+          td 
+            a.reserved href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          
+    .col-md-3
+      h3 Unor
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a.busy href="#" 2
+          td 
+            a.busy href="#" 3
+          td 
+            a.busy href="#" 4
+          td 
+            a.busy href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a.busy href="#" 10
+          td 
+            a.busy href="#" 11
+          td 
+            a.busy href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a.busy href="#" 17
+          td 
+            a.busy href="#" 18
+          td 
+            a.busy href="#" 19
+          td 
+            a.busy href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
       
+    .col-md-3
+      h3 Brezen
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Duben
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Kveten
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Cerven
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Cervene
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Srpen
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Zari
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Rijen
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Listopad
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+      
+    .col-md-3
+      h3 Prosinec
+      table.table
+        tr
+          td 
+            a href="#" 1
+          td 
+            a href="#" 2
+          td 
+            a href="#" 3
+          td 
+            a href="#" 4
+          td 
+            a href="#" 5 
+          td 
+            a href="#" 6
+          td 
+            a href="#" 7
+        tr
+          td 
+            a href="#" 8
+          td 
+            a href="#" 9
+          td 
+            a href="#" 10
+          td 
+            a href="#" 11
+          td 
+            a href="#" 12
+          td 
+            a href="#" 13
+          td 
+            a href="#" 14
+        tr
+          td 
+            a href="#" 15
+          td 
+            a href="#" 16
+          td 
+            a href="#" 17
+          td 
+            a href="#" 18
+          td 
+            a href="#" 19
+          td 
+            a href="#" 20
+          td 
+            a href="#" 21
+        tr
+          td 
+            a href="#" 22
+          td 
+            a href="#" 23
+          td 
+            a href="#" 24
+          td 
+            a href="#" 25
+          td 
+            a href="#" 26
+          td 
+            a href="#" 27
+          td 
+            a href="#" 28
+        tr
+          td 
+            a href="#" 29
+          td 
+            a href="#" 30
+          td 
+            a href="#" 31
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+          td 
+            a href="#" 
+    hr
+    span.caption 
+      i.busy.icon-square
+      | obsazeny termin
+    span.caption
+      i.reserved.icon-square
+      | rezervovany termin

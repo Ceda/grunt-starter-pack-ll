@@ -28,13 +28,13 @@
               <a href="#aktivity">Aktivity</a>
             </li>
             <li>
+              <a href="#fotogalerie">Fotografie</a>
+            </li>
+            <li>
               <a href="#okoli">Okolí</a>
             </li>
             <li>
               <a href="#cenik">Cenik</a>
-            </li>
-            <li>
-              <a href="#fotogalerie">Fotografie</a>
             </li>
             <li>
               <a href="#rezervace">Rezervace</a>
@@ -130,7 +130,19 @@
         </div>
       </div>
     </section>
-    <section id="nevim">
+    <section id="aktivity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>
+              Aktivity <span>na lipně</span>
+            </h2>
+            <p class="text-center">
+              <br /><Nejbližší>prodejna potravin se nachází asi 50 metrů od Rezidence. Stravování a další služby je možné domluvit na recepci. </Nejbližší><br /><Všechny>aktivity jsou na dosah. </Všechny><br /><Například>hlavní promenáda, Aquapark, nebo písčitá pláž se nacházejí hned pod Rezidencí Club Canada. </Například><br /><Centrum>obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze,  nebo minutku autem.</Centrum><br /><Je>vás víc? Můžeme Vám za stejných podmínek zajistit vedlejší apartmán, pokud bude v daném termínu volný. </Je><br /><Pobyt>psů a jiných zvířat je v apartmánu zakázán. Apartmán je nekuřácký. </Pobyt>
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -158,20 +170,6 @@
             <img src="/assets/img/acco-1.jpg" />
             <p>
               Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="aktivity">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>
-              Aktivity <span>na lipně</span>
-            </h2>
-            <p class="text-center">
-              <br /><Nejbližší>prodejna potravin se nachází asi 50 metrů od Rezidence. Stravování a další služby je možné domluvit na recepci. </Nejbližší><br /><Všechny>aktivity jsou na dosah. </Všechny><br /><Například>hlavní promenáda, Aquapark, nebo písčitá pláž se nacházejí hned pod Rezidencí Club Canada. </Například><br /><Centrum>obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze,  nebo minutku autem.</Centrum><br /><Je>vás víc? Můžeme Vám za stejných podmínek zajistit vedlejší apartmán, pokud bude v daném termínu volný. </Je><br /><Pobyt>psů a jiných zvířat je v apartmánu zakázán. Apartmán je nekuřácký. </Pobyt>
             </p>
           </div>
         </div>
@@ -307,7 +305,7 @@
             <p>
               Centrum obce s centrálním parkovištěm a lyžařské středisko Kramolín (sedačková lanovka ke Stezce korunami stromů) jsou ve vzdálenosti 5 – 10 minut pohodlné chůze, nebo minutku autem.
             </p>
-            <a class="big-primary-btn btn-block" href="#">Zobrazit obsazenost</a>
+            <a class="big-primary-btn btn-block"> Zobrazit obsazenost</a>
           </div>
           <div class="col-md-4">
             <h3>
@@ -414,9 +412,26 @@
         <h3 class="text-center">
           Storno <span>podmínky</span>
         </h3>
-        <p class="text-center storno">
-          Rezervace se stává závaznou po zaplacení zálohy ve výši 50 % z celkové ceny pobytu. <br />Pobyt možný minimálně na 2 noci. <br />Při pobytu na 2 a 3 noci je nutná platba celého pobytu předem. <br />Při příjezdu se platí zbytek ceny nájemného a vratná kauce ve výši 2 000 Kč. <br />Při zrušení ubytování méně než 14 dní před dovolenou je účtován storno poplatek ve výši 50 % zálohy. <br />Při zrušení ubytování méně než 7 dní před příjezdem záloha propadá.  
-        </p>
+        <ul class="square storno">
+          <li>
+            Rezervace se stává závaznou po zaplacení zálohy ve výši 50 % z celkové ceny pobytu. 
+          </li>
+          <li>
+            Pobyt možný minimálně na 2 noci. 
+          </li>
+          <li>
+            Při pobytu na 2 a 3 noci je nutná platba celého pobytu předem. 
+          </li>
+          <li>
+            Při příjezdu se platí zbytek ceny nájemného a vratná kauce ve výši 2 000 Kč. 
+          </li>
+          <li>
+            Při zrušení ubytování méně než 14 dní před dovolenou je účtován storno poplatek ve výši 50 % zálohy. 
+          </li>
+          <li>
+            Při zrušení ubytování méně než 7 dní před příjezdem záloha propadá.  
+          </li>
+        </ul>
         <h2>
           Služby zahrnuty <span>v ceně pobytu: </span>
         </h2>
@@ -490,13 +505,17 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <input class="form-control" placeholder="Začátek pobytu" />
+              <div class="input-group">
+                <input class="form-control" placeholder="Začátek pobytu" /><span class="input-group-addon"><i class="icon-cleanup"></i></span>
+              </div>
             </div>
             <div class="col-md-4">
-              <input class="form-control" placeholder="Konec pobytu" />
+              <div class="input-group">
+                <input class="form-control" placeholder="Konec pobytu" /><span class="input-group-addon"><i class="icon-cleanup"></i></span>
+              </div>
             </div>
             <div class="col-md-4">
-              <a class="big-info-btn btn-block" href="#">Zobrazit dostupnost</a>
+              <a class="lightbox big-info-btn btn-block" data-lightbox-type="inline" href="#obsazenost">Zobrazit dostupnost</a>
             </div>
           </div>
           <div class="row">
@@ -597,3 +616,1476 @@
     </footer>
   </body>
 </html>
+<div class="booking-calendar" id="obsazenost" style="display: none">
+  <h2>
+    Přehled <span>volných termínů</span>
+  </h2>
+  <div class="row">
+    <div class="col-md-3">
+      <h3>
+        Leden
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">10</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">11</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">12</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">16</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">17</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">18</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">19</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">26</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">27</a>
+          </td>
+          <td>
+            <a class="reserved" href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Unor
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a class="busy" href="#">2</a>
+          </td>
+          <td>
+            <a class="busy" href="#">3</a>
+          </td>
+          <td>
+            <a class="busy" href="#">4</a>
+          </td>
+          <td>
+            <a class="busy" href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a class="busy" href="#">10</a>
+          </td>
+          <td>
+            <a class="busy" href="#">11</a>
+          </td>
+          <td>
+            <a class="busy" href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a class="busy" href="#">17</a>
+          </td>
+          <td>
+            <a class="busy" href="#">18</a>
+          </td>
+          <td>
+            <a class="busy" href="#">19</a>
+          </td>
+          <td>
+            <a class="busy" href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Brezen
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Duben
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Kveten
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Cerven
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Cervene
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Srpen
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Zari
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Rijen
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Listopad
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h3>
+        Prosinec
+      </h3>
+      <table class="table">
+        <tr>
+          <td>
+            <a href="#">1</a>
+          </td>
+          <td>
+            <a href="#">2</a>
+          </td>
+          <td>
+            <a href="#">3</a>
+          </td>
+          <td>
+            <a href="#">4</a>
+          </td>
+          <td>
+            <a href="#">5 </a>
+          </td>
+          <td>
+            <a href="#">6</a>
+          </td>
+          <td>
+            <a href="#">7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">8</a>
+          </td>
+          <td>
+            <a href="#">9</a>
+          </td>
+          <td>
+            <a href="#">10</a>
+          </td>
+          <td>
+            <a href="#">11</a>
+          </td>
+          <td>
+            <a href="#">12</a>
+          </td>
+          <td>
+            <a href="#">13</a>
+          </td>
+          <td>
+            <a href="#">14</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">15</a>
+          </td>
+          <td>
+            <a href="#">16</a>
+          </td>
+          <td>
+            <a href="#">17</a>
+          </td>
+          <td>
+            <a href="#">18</a>
+          </td>
+          <td>
+            <a href="#">19</a>
+          </td>
+          <td>
+            <a href="#">20</a>
+          </td>
+          <td>
+            <a href="#">21</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">22</a>
+          </td>
+          <td>
+            <a href="#">23</a>
+          </td>
+          <td>
+            <a href="#">24</a>
+          </td>
+          <td>
+            <a href="#">25</a>
+          </td>
+          <td>
+            <a href="#">26</a>
+          </td>
+          <td>
+            <a href="#">27</a>
+          </td>
+          <td>
+            <a href="#">28</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">29</a>
+          </td>
+          <td>
+            <a href="#">30</a>
+          </td>
+          <td>
+            <a href="#">31</a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+          <td>
+            <a href="#"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <span class="caption"><i class="busy icon-square"></i>obsazeny termin</span><span class="caption"><i class="reserved icon-square"></i>rezervovany termin</span>
+  </div>
+</div>

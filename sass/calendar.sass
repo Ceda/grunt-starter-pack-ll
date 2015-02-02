@@ -1,0 +1,27 @@
+.booking-calendar
+  padding: 20px
+  
+  td
+    padding: 0 !important
+    a 
+      display: block
+      text-align: center
+      padding: 5px
+      &.reserved
+        background: $green
+        color: white
+      &.busy
+        background: $gray-dark
+        color: white
+
+span.caption
+  i.icon-square
+    position: relative
+    top: 4px
+    display: inline
+    font-size: 24px
+    &.reserved
+      color: $green
+    &.busy
+      color: $gray-dark
+    
