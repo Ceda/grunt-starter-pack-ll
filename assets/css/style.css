@@ -7538,3 +7538,35 @@ footer {
     background-size: 32px 32px;
   }
 }
+.booking-calendar {
+  padding: 20px;
+}
+.booking-calendar td {
+  padding: 0 !important;
+}
+.booking-calendar td a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+.booking-calendar td a.reserved {
+  background: #9dc02e;
+  color: white;
+}
+.booking-calendar td a.busy {
+  background: #777983;
+  color: white;
+}
+
+span.caption i.icon-square {
+  position: relative;
+  top: 4px;
+  display: inline;
+  font-size: 24px;
+}
+span.caption i.icon-square.reserved {
+  color: #9dc02e;
+}
+span.caption i.icon-square.busy {
+  color: #777983;
+}
