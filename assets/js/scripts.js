@@ -38,6 +38,9 @@
         scrollTop: $("#fotogalerie").offset().top - 90
       }, 500);
     });
+    $('.input-daterange').datepicker({
+      language: 'cs'
+    });
     if ($('a.lightbox').length > 0) {
       $('a.lightbox').nivoLightbox();
     }
