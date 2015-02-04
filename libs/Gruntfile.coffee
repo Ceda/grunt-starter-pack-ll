@@ -77,7 +77,7 @@ module.exports = (grunt) ->
       development:
         options:
           style: 'expanded'
-          loadPath: ["/Users/ceda/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/"]
+          includePaths: ["/Users/ceda/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/"]
         files:
           "<%= public_path %>/assets/css/style.css": "<%= public_path %>/sass/style.sass"
 
