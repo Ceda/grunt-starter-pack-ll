@@ -1,5 +1,5 @@
 @import url(/assets/font/canada.css);
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web|Signika|Exo+2|Signika+Negative|Basic|Magra&subset=latin,latin-ext.css);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web|Signika|Exo+2|Signika+Negative|Basic|Magra&subset=latin,latin-ext);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4859,102 +4859,6 @@ button.close {
     width: 20%;
     float: left; } }
 
-#sliderBigReal .bx-wrapper {
-  position: relative;
-  margin: 0 auto 60px;
-  padding: 0;
-  *zoom: 1; }
-  #sliderBigReal .bx-wrapper img {
-    max-width: 100%;
-    display: block; }
-  #sliderBigReal .bx-wrapper .bx-viewport {
-    background: #fff;
-    -webkit-transform: translatez(0);
-        -ms-transform: translatez(0);
-            transform: translatez(0); }
-  #sliderBigReal .bx-wrapper .bx-prev {
-    left: -60px; }
-  #sliderBigReal .bx-wrapper .bx-next {
-    right: -60px; }
-  #sliderBigReal .bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 50px;
-    height: 75px;
-    z-index: 9999;
-    font-family: "canada";
-    font-size: 50px;
-    opacity: .5;
-    color: #37465d; }
-    #sliderBigReal .bx-wrapper .bx-controls-direction a:hover, #sliderBigReal .bx-wrapper .bx-controls-direction a:focus {
-      text-decoration: none !important;
-      opacity: 1; }
-    #sliderBigReal .bx-wrapper .bx-controls-direction a.disabled {
-      display: none; }
-
-#sliderThumbReal .bx-prev {
-  left: 0; }
-#sliderThumbReal .bx-next {
-  right: 0; }
-#sliderThumbReal .bx-controls-direction {
-  position: relative;
-  top: -85px; }
-  #sliderThumbReal .bx-controls-direction a {
-    background: #f8f8f8;
-    position: absolute;
-    top: 0;
-    margin-top: 0;
-    line-height: 80px;
-    outline: 0;
-    width: 20px;
-    height: 75px;
-    z-index: 9999;
-    font-family: "canada";
-    font-size: 20px;
-    opacity: .5;
-    color: #37465d; }
-    #sliderThumbReal .bx-controls-direction a:hover, #sliderThumbReal .bx-controls-direction a:focus {
-      text-decoration: none !important;
-      opacity: 1; }
-    #sliderThumbReal .bx-controls-direction a.disabled {
-      display: none; }
-
-#slider ul {
-  margin: 0;
-  padding: 0; }
-#slider .bx-wrapper li {
-  height: 400px !important; }
-#slider .main-slider {
-  position: relative; }
-  #slider .main-slider h2 {
-    position: absolute;
-    z-index: 1000;
-    text-transform: uppercase;
-    display: block;
-    color: #fff;
-    width: auto;
-    left: 20%;
-    padding: 20px 40px 20px 20px;
-    top: 60%;
-    font-size: 36px; }
-    #slider .main-slider h2 span {
-      color: #fff;
-      font-size: 28px; }
-  #slider .main-slider img {
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    min-width: 1430px; }
-
-#sliderThumbReal {
-  margin-top: 10px; }
-  #sliderThumbReal li a img {
-    opacity: .6; }
-  #sliderThumbReal li.active a img {
-    opacity: 1; }
-
 * {
   outline: none !important; }
 
@@ -5141,73 +5045,92 @@ footer {
 .weather strong {
   color: #37465d; }
 
-.extend_1, .nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
-  background: #fff;
-  padding: 40px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+#sliderBigReal .bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1; }
+  #sliderBigReal .bx-wrapper img {
+    max-width: 100%;
+    display: block; }
+  #sliderBigReal .bx-wrapper .bx-viewport {
+    background: #fff;
+    -webkit-transform: translatez(0);
+        -ms-transform: translatez(0);
+            transform: translatez(0); }
+  #sliderBigReal .bx-wrapper .bx-prev {
+    left: -60px; }
+  #sliderBigReal .bx-wrapper .bx-next {
+    right: -60px; }
+  #sliderBigReal .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 50px;
+    height: 75px;
+    z-index: 9999;
+    font-family: "canada";
+    font-size: 50px;
+    opacity: .5;
+    color: #37465d; }
+    #sliderBigReal .bx-wrapper .bx-controls-direction a:hover, #sliderBigReal .bx-wrapper .bx-controls-direction a:focus {
+      text-decoration: none !important;
+      opacity: 1; }
+    #sliderBigReal .bx-wrapper .bx-controls-direction a.disabled {
+      display: none; }
 
-.nivo-lightbox-theme-default.nivo-lightbox-overlay {
-  background: #666;
-  background: rgba(255, 255, 255, 0.6); }
-.nivo-lightbox-theme-default .nivo-lightbox-nav {
-  top: 10%;
-  width: 8%;
-  height: 80%;
-  text-indent: -9999px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  opacity: 0.5;
-  background-color: #343b3a; }
-  .nivo-lightbox-theme-default .nivo-lightbox-nav:hover {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.5); }
-.nivo-lightbox-theme-default .nivo-lightbox-prev {
-  background-image: url("/bower_components/nivo-lightbox/themes/default/prev.png");
-  border-radius: 0 3px 3px 0; }
-.nivo-lightbox-theme-default .nivo-lightbox-next {
-  background-image: url("/bower_components/nivo-lightbox/themes/default/next.png");
-  border-radius: 3px 0 0 3px; }
-.nivo-lightbox-theme-default .nivo-lightbox-close {
-  display: block;
-  background: url("/bower_components/nivo-lightbox/themes/default/close.png") no-repeat center center #37465d;
-  width: 60px;
-  height: 60px;
-  text-indent: -9999px;
-  padding: 5px;
-  opacity: 1;
-  right: 0;
-  top: 0; }
-  .nivo-lightbox-theme-default .nivo-lightbox-close:hover {
-    opacity: 1; }
-.nivo-lightbox-theme-default .nivo-lightbox-title-wrap {
-  bottom: -7%; }
-.nivo-lightbox-theme-default .nivo-lightbox-title {
-  font: 14px/20px Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  background: #000;
-  color: #fff;
-  padding: 7px 15px;
-  border-radius: 30px; }
-.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading {
-  background: url("/bower_components/nivo-lightbox/themes/default/loading.gif") no-repeat 50% 50%; }
-.nivo-lightbox-theme-default .nivo-lightbox-image img {
-  background: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+#sliderThumbReal .bx-prev {
+  left: 0; }
+#sliderThumbReal .bx-next {
+  right: 0; }
+#sliderThumbReal .bx-controls-direction {
+  position: relative;
+  top: -85px; }
+  #sliderThumbReal .bx-controls-direction a {
+    background: #f8f8f8;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    line-height: 80px;
+    outline: 0;
+    width: 20px;
+    height: 75px;
+    z-index: 9999;
+    font-family: "canada";
+    font-size: 20px;
+    opacity: .5;
+    color: #37465d; }
+    #sliderThumbReal .bx-controls-direction a:hover, #sliderThumbReal .bx-controls-direction a:focus {
+      text-decoration: none !important;
+      opacity: 1; }
+    #sliderThumbReal .bx-controls-direction a.disabled {
+      display: none; }
 
-@media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  .nivo-lightbox-theme-default .nivo-lightbox-prev {
-    background-image: url("/bower_components/nivo-lightbox/themes/default/prev@2x.png");
-    background-size: 48px 48px; }
-  .nivo-lightbox-theme-default .nivo-lightbox-next {
-    background-image: url("/bower_components/nivo-lightbox/themes/default/next@2x.png");
-    background-size: 48px 48px; }
-  .nivo-lightbox-theme-default .nivo-lightbox-close {
-    background-image: url("/bower_components/nivo-lightbox/themes/default/close@2x.png");
-    background-size: 16px 16px; }
-  .nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading {
-    background-image: url("/bower_components/nivo-lightbox/themes/default/loading@2x.gif");
-    background-size: 32px 32px; } }
+.booking-calendar {
+  padding: 20px; }
+  .booking-calendar td {
+    padding: 0 !important; }
+    .booking-calendar td a {
+      display: block;
+      text-align: center;
+      padding: 5px; }
+      .booking-calendar td a.reserved {
+        background: #9dc02e;
+        color: white; }
+      .booking-calendar td a.busy {
+        background: #777983;
+        color: white; }
+
+span.caption i.icon-square {
+  position: relative;
+  top: 4px;
+  display: inline;
+  font-size: 24px; }
+  span.caption i.icon-square.reserved {
+    color: #9dc02e; }
+  span.caption i.icon-square.busy {
+    color: #777983; }
 
 .datepicker {
   padding: 6px 12px;
@@ -5413,27 +5336,166 @@ footer {
   margin-left: -5px;
   margin-right: -5px; }
 
-.booking-calendar {
-  padding: 20px; }
-  .booking-calendar td {
-    padding: 0 !important; }
-    .booking-calendar td a {
-      display: block;
-      text-align: center;
-      padding: 5px; }
-      .booking-calendar td a.reserved {
-        background: #9dc02e;
-        color: white; }
-      .booking-calendar td a.busy {
-        background: #777983;
-        color: white; }
+/*
+ *Icon Font: canada */
+@font-face {
+  font-family: "canada";
+  src: url("/assets/font/canada.eot");
+  src: url("/assets/font/canada.eot?#iefix") format("embedded-opentype"), url("/assets/font/canada.woff") format("woff"), url("/assets/font/canada.ttf") format("truetype"), url("/assets/font/canada.svg#canada") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-span.caption i.icon-square {
-  position: relative;
-  top: 4px;
-  display: inline;
-  font-size: 24px; }
-  span.caption i.icon-square.reserved {
-    color: #9dc02e; }
-  span.caption i.icon-square.busy {
-    color: #777983; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "canada";
+    src: url("/assets/font/canada.svg#canada") format("svg"); }
+ }
+
+[data-icon]:before {
+  content: attr(data-icon);
+  display: inline-block;
+  font-family: "canada";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.icon-car:before, .icon-cleanup:before, .icon-depository:before, .icon-fitness:before, .icon-wallet:before, .icon-wifi:before {
+  display: inline-block;
+  font-family: "canada";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.icon-car:before {
+  content: "\f100"; }
+
+.icon-cleanup:before {
+  content: "\f101"; }
+
+.icon-depository:before {
+  content: "\f102"; }
+
+.icon-fitness:before {
+  content: "\f103"; }
+
+.icon-wallet:before {
+  content: "\f104"; }
+
+.icon-wifi:before {
+  content: "\f105"; }
+
+.extend_1, .nivo-lightbox-theme-default .nivo-lightbox-ajax, .nivo-lightbox-theme-default .nivo-lightbox-inline {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+
+.nivo-lightbox-theme-default.nivo-lightbox-overlay {
+  background: #666;
+  background: rgba(255, 255, 255, 0.6); }
+.nivo-lightbox-theme-default .nivo-lightbox-nav {
+  top: 10%;
+  width: 8%;
+  height: 80%;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.5;
+  background-color: #343b3a; }
+  .nivo-lightbox-theme-default .nivo-lightbox-nav:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5); }
+.nivo-lightbox-theme-default .nivo-lightbox-prev {
+  background-image: url("/bower_components/nivo-lightbox/themes/default/prev.png");
+  border-radius: 0 3px 3px 0; }
+.nivo-lightbox-theme-default .nivo-lightbox-next {
+  background-image: url("/bower_components/nivo-lightbox/themes/default/next.png");
+  border-radius: 3px 0 0 3px; }
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+  display: block;
+  background: url("/bower_components/nivo-lightbox/themes/default/close.png") no-repeat center center #37465d;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  padding: 5px;
+  opacity: 1;
+  right: 0;
+  top: 0; }
+  .nivo-lightbox-theme-default .nivo-lightbox-close:hover {
+    opacity: 1; }
+.nivo-lightbox-theme-default .nivo-lightbox-title-wrap {
+  bottom: -7%; }
+.nivo-lightbox-theme-default .nivo-lightbox-title {
+  font: 14px/20px Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: #000;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 30px; }
+.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading {
+  background: url("/bower_components/nivo-lightbox/themes/default/loading.gif") no-repeat 50% 50%; }
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+
+@media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  .nivo-lightbox-theme-default .nivo-lightbox-prev {
+    background-image: url("/bower_components/nivo-lightbox/themes/default/prev@2x.png");
+    background-size: 48px 48px; }
+  .nivo-lightbox-theme-default .nivo-lightbox-next {
+    background-image: url("/bower_components/nivo-lightbox/themes/default/next@2x.png");
+    background-size: 48px 48px; }
+  .nivo-lightbox-theme-default .nivo-lightbox-close {
+    background-image: url("/bower_components/nivo-lightbox/themes/default/close@2x.png");
+    background-size: 16px 16px; }
+  .nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading {
+    background-image: url("/bower_components/nivo-lightbox/themes/default/loading@2x.gif");
+    background-size: 32px 32px; } }
+
+#slider ul {
+  margin: 0;
+  padding: 0; }
+#slider .bx-wrapper li {
+  height: 400px !important; }
+#slider .main-slider {
+  position: relative; }
+  #slider .main-slider h2 {
+    position: absolute;
+    z-index: 1000;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    width: auto;
+    left: 20%;
+    padding: 20px 40px 20px 20px;
+    top: 60%;
+    font-size: 36px; }
+    #slider .main-slider h2 span {
+      color: #fff;
+      font-size: 28px; }
+  #slider .main-slider img {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    min-width: 1430px; }
+
+#sliderThumbReal {
+  margin-top: 10px; }
+  #sliderThumbReal li a img {
+    opacity: .6; }
+  #sliderThumbReal li.active a img {
+    opacity: 1; }

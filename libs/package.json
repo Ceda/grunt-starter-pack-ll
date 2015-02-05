@@ -6,7 +6,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "~0.4.5",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-csslint": "~0.2.0",
     "grunt-contrib-jshint": "~0.8.0",
@@ -21,7 +21,9 @@
     "grunt-csscomb": "~2.0.1",
     "grunt-casperjs": "latest",
     "grunt-sass": "git://github.com/justafish/grunt-sass",
-    "load-grunt-tasks": "~0.2.1"
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-sass-globbing": "^1.0.3",
+    "wiredep": "^2.2.2"
   },
   "scripts": {
     "test": "grunt test"
@@ -29,4 +31,3 @@
   "author": "Ceda_",
   "license": "BSD-2-Clause"
 }
-

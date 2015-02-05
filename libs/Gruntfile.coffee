@@ -8,7 +8,8 @@ module.exports = (grunt) ->
       scripts:
         src: ["<%= public_path %>/src/*.js"]
         dest: "<%= public_path %>/assets/js/scripts.js"
-
+    
+    
     connect:
       options: 
         port: 9020,
@@ -56,7 +57,7 @@ module.exports = (grunt) ->
 
       sass:
         files: "<%= public_path %>/sass/*.{scss,sass}"
-        tasks: ["sass:development", "autoprefixer"]
+        tasks: ["sass_globbing", "sass:development", "autoprefixer"]
 
 
     uglify:
@@ -78,6 +79,8 @@ module.exports = (grunt) ->
         options:
           style: 'expanded'
           includePaths: ["/Users/ceda/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.3/assets/stylesheets/"]
+          sourceMap: true
+          
         files:
           "<%= public_path %>/assets/css/style.css": "<%= public_path %>/sass/style.sass"
 
@@ -89,6 +92,10 @@ module.exports = (grunt) ->
         files:
           "<%= public_path %>/assets/css/style.min.css": "<%= public_path %>/sass/style.scss"
 
+    sass_globbing:
+      your_target:
+        files: '<%= public_path %>/sass/_frontend.sass': '<%= public_path %>/sass/frontend/*.s*ss'
+    
     slim:
       dev:
         options:
