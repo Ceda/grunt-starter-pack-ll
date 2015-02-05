@@ -8,10 +8,10 @@ $ap-default: (
   margin: 1em,
   border: 0px,
   font-size: 1em,
-  border-color: $green,
+  border-color: #ddd,
   label-color: $input-color-placeholder,
-  active-color: $dblue,
-  valid-color: $green,
+  active-color: #000,
+  valid-color: #ddd,
   placeholder-background-color: white,
   textarea: true
   );
