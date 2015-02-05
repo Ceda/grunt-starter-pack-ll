@@ -4917,6 +4917,10 @@ h2 span, h3 span, h4 span {
     margin-top: 20px;
     margin-bottom: 0px; }
 
+.btn, .big-primary-btn, .big-info-btn {
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear; }
+
 .big-primary-btn {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -4997,6 +5001,63 @@ ul.square {
 .contact-us strong {
   color: #37465d; }
 
+.booking-form input:not([type="submit"]) {
+  background-color: white;
+  height: calc(4em + 0px);
+  padding: 1em;
+  font-size: 1em;
+  border: 0px solid #9dc02e;
+  
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  resize: none;
+  outline: none; }
+  .booking-form input:not([type="submit"]):hover {
+    border: 0px solid #9dc02e; }
+  .booking-form input:not([type="submit"]):focus, .booking-form input:not([type="submit"]):active {
+    border: 0px solid #37465d; }
+    .booking-form input:not([type="submit"]):focus + label:before, .booking-form input:not([type="submit"]):active + label:before {
+      color: #37465d; }
+  .booking-form input:not([type="submit"]) + label {
+    display: block;
+    font-size: 1em;
+    height: calc(4em + 0px);
+    line-height: 1;
+    padding-top: calc(1em + 0px);
+    margin-top: calc(-4em - 0px - 10px);
+    margin-bottom: 1em;
+    pointer-events: none; }
+    .booking-form input:not([type="submit"]) + label:before {
+      content: attr(placeholder);
+      display: inline-block;
+      color: #777983;
+      margin: 0 calc(1em + 0px);
+      white-space: nowrap;
+      -webkit-transition-property: -webkit-transform, color;
+              transition-property: transform, color;
+      -webkit-transition-duration: 0.2s;
+              transition-duration: 0.2s;
+      -webkit-transition-delay: 0;
+              transition-delay: 0;
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+      -webkit-transform-origin: left center;
+          -ms-transform-origin: left center;
+              transform-origin: left center; }
+  .booking-form input:not([type="submit"]):focus + label:before, .booking-form input:not([type="submit"]).active + label:before, .booking-form input:not([type="submit"]):valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 0px;
+    -webkit-transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9);
+    -ms-transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9);
+    transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9); }
+  .booking-form input:not([type="submit"]):valid {
+    border: 0px solid #9dc02e; }
+    .booking-form input:not([type="submit"]):valid + label:before {
+      content: attr(alt);
+      color: #9dc02e; }
+.booking-form label {
+  font-weight: normal; }
 .booking-form .big-primary-btn {
   font-size: 25px;
   padding: 30px 16px; }
@@ -5012,6 +5073,63 @@ ul.square {
     .booking-form .input-group .input-group-addon i {
       font-size: 20px; }
 
+.contact-form input:not([type="submit"]) {
+  background-color: white;
+  height: calc(4em + 0px);
+  padding: 1em;
+  font-size: 1em;
+  border: 0px solid #9dc02e;
+  
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  resize: none;
+  outline: none; }
+  .contact-form input:not([type="submit"]):hover {
+    border: 0px solid #9dc02e; }
+  .contact-form input:not([type="submit"]):focus, .contact-form input:not([type="submit"]):active {
+    border: 0px solid #37465d; }
+    .contact-form input:not([type="submit"]):focus + label:before, .contact-form input:not([type="submit"]):active + label:before {
+      color: #37465d; }
+  .contact-form input:not([type="submit"]) + label {
+    display: block;
+    font-size: 1em;
+    height: calc(4em + 0px);
+    line-height: 1;
+    padding-top: calc(1em + 0px);
+    margin-top: calc(-4em - 0px - 10px);
+    margin-bottom: 1em;
+    pointer-events: none; }
+    .contact-form input:not([type="submit"]) + label:before {
+      content: attr(placeholder);
+      display: inline-block;
+      color: #777983;
+      margin: 0 calc(1em + 0px);
+      white-space: nowrap;
+      -webkit-transition-property: -webkit-transform, color;
+              transition-property: transform, color;
+      -webkit-transition-duration: 0.2s;
+              transition-duration: 0.2s;
+      -webkit-transition-delay: 0;
+              transition-delay: 0;
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+      -webkit-transform-origin: left center;
+          -ms-transform-origin: left center;
+              transform-origin: left center; }
+  .contact-form input:not([type="submit"]):focus + label:before, .contact-form input:not([type="submit"]).active + label:before, .contact-form input:not([type="submit"]):valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 0px;
+    -webkit-transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9);
+    -ms-transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9);
+    transform: translateY(calc((-1em - 0.5em) - 0px)) scale(0.9, 0.9); }
+  .contact-form input:not([type="submit"]):valid {
+    border: 0px solid #9dc02e; }
+    .contact-form input:not([type="submit"]):valid + label:before {
+      content: attr(alt);
+      color: #9dc02e; }
+.contact-form label {
+  font-weight: normal; }
 .contact-form .big-primary-btn {
   font-size: 22px; }
 
@@ -5041,9 +5159,17 @@ footer {
   min-height: 150px; }
 
 .weather li {
-  padding: 0 10px; }
+  padding: 0 20px; }
 .weather strong {
   color: #37465d; }
+
+a.lightbox:hover img {
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  -webkit-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+          transform: scale(1.04);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 
 #sliderBigReal .bx-wrapper {
   position: relative;
@@ -5069,7 +5195,7 @@ footer {
     outline: 0;
     width: 50px;
     height: 75px;
-    z-index: 9999;
+    z-index: 1000;
     font-family: "canada";
     font-size: 50px;
     opacity: .5;
@@ -5096,7 +5222,7 @@ footer {
     outline: 0;
     width: 20px;
     height: 75px;
-    z-index: 9999;
+    z-index: 1000;
     font-family: "canada";
     font-size: 20px;
     opacity: .5;
@@ -5108,7 +5234,14 @@ footer {
       display: none; }
 
 .booking-calendar {
-  padding: 20px; }
+  padding: 0 20px 20px 20px; }
+  .booking-calendar h2 {
+    margin-top: 0; }
+  .booking-calendar h3 {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .booking-calendar table {
+    border: 1px solid #ced3d3; }
   .booking-calendar td {
     padding: 0 !important; }
     .booking-calendar td a {

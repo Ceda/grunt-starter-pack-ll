@@ -57,7 +57,10 @@ h2, h3, h4
   &.about
     margin-top: 20px
     margin-bottom: 0px
-      
+
+.btn
+  transition: all 0.2s linear 
+  
   
 .big-primary-btn
   @extend .btn
@@ -143,6 +146,11 @@ ul.square
     color: $dblue
 
 .booking-form
+  input
+    &:not([type="submit"])
+      @include adaptive-placeholder
+  label
+    font-weight: normal
   .big-primary-btn
     font-size: 25px
     padding: 30px 16px
@@ -159,6 +167,11 @@ ul.square
         font-size: 20px
 
 .contact-form
+  input
+    &:not([type="submit"])
+      @include adaptive-placeholder
+  label
+    font-weight: normal
   .big-primary-btn
     font-size: 22px
   
@@ -197,6 +210,14 @@ footer
 .weather    
   @extend .text-center
   li
-    padding: 0 10px
+    padding: 0 20px
   strong
     color: $dblue
+    
+a.lightbox
+  &:hover 
+    img
+      transition: all 0.2s linear 
+      transform: scale(1.04)
+      @include box-shadow(0 1px 2px rgba(0,0,0,.2))
+      

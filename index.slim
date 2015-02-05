@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Apartmany Lipno Canada
+    title Apartmán Lipno Canada
     meta name="keywords" content="template language"
     meta name="author" content="author"
     link href="/bower_components/nivo-lightbox/nivo-lightbox.css" rel="stylesheet" 
@@ -25,7 +25,7 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="../"  Apartmány Lipno Canada
+          a.navbar-brand href="../"  Apartmán Lipno Canada
         nav#scrollspy.collapse.navbar-collapse.menu-collapse
           ul.nav.navbar-nav
             li
@@ -44,25 +44,24 @@ html
     section.slider#slider
       ul.main-slider
         li
-          h2
-            | apartmán lipno canada 
-            span Aktivni dovolena po cely rok
           img src="/assets/img/slider-img.jpg" /
         li
-          h2
-            | apartmán lipno canada 
-            span Aktivni dovolena po cely rok
           img src="/assets/img/slider-img.jpg" /
         li
-          h2
-            | apartmán lipno canada 
-            span Aktivni dovolena po cely rok
           img src="/assets/img/slider-img.jpg" /
     
     section#o-nas
       .container
+        h2
+          | apartmán lipno canada 
+          span Aktivní dovolená po celý rok
+        
         p.claim 
-          | Náš apartmán najdete v blízkosti centra obce, v krásném komplexu „Rezidence Club Canada“ vybaveném vlastní kavárnou a restaurací s dětským koutkem, fitness, saunou a vířivkou. Všechny tyto služby můžete využít aniž by jste museli opustit Rezidenci a večer posedět třeba v kavárně, když vaše ratolesti spí jen o patro výš, hlídané elektronickou chůvičkou. Rezidence Club Canada působí velmi příjemným, uspořádaným a útulným dojmem uspokojujícím vysoké nároky, kde se budete cítit jako doma.
+          | Náš apartmán najdete v blízkosti centra obce, v krásném komplexu 
+          strong „Rezidence Club Canada“ 
+          | vybaveném vlastní kavárnou a restaurací s dětským koutkem, fitness, saunou a vířivkou. Všechny tyto služby můžete využít aniž by jste museli opustit Rezidenci a večer posedět třeba v kavárně, když vaše ratolesti spí jen o patro výš, hlídané elektronickou chůvičkou. 
+          strong Rezidence Club Canada 
+          | působí velmi příjemným, uspořádaným a útulným dojmem uspokojujícím vysoké nároky, kde se budete cítit jako doma.
         .row
           .col-md-4
             a.lightbox href="/assets/img/gallery-photo.jpg"
@@ -76,7 +75,9 @@ html
         .row
           .col-md-12
             p.claim.about
-              | Apartmán č. 22 je umístěn v 1. patře s výhledem do parku a poskytuje pohodlné ubytování pro 1 - 4 osoby.
+              strong Apartmán č. 22 
+              | je umístěn v 1. patře s výhledem do parku a poskytuje pohodlné ubytování 
+              strong pro 1 - 4 osoby.
             .equipment
               h4 
                 | Vybavení 
@@ -98,7 +99,8 @@ html
                     li Ložní prádlo, osušky, ručníky a závěrečný úklid jsou zahrnuty v ceně. Samozřejmostí je toaletní papír, mýdlo, utěrka, jar a houbičky na nádobí, žehlička, fén, 4 páry pantoflí k přezutí.
                 .col-md-6
                   h4 
-                    | Děti 
+                    | Vybavení 
+                    span pro děti 
                   ul.square.large
                     li Pro Vaše děti najdete v apartmánu dětskou jídelní židličku a ohřívač na dětské (užší) lahve.
                 
@@ -419,7 +421,9 @@ html
             ul.square.storno 
               li V případě obsazení apartmánu ve stornovaném termínu náhradním klientem, bude celá úhrada klientovi, který daný termín původně objednal a rezervaci stornoval, vrácena zpět v plné výši.
               li V případě stornování pobytu např. z důvodu nemoci, může klient vyčerpat již uhrazenou částku za pobyt v jiném, předem domluveném termínu, maximálně však do osmi měsíců od původní rezervace.
-
+          .col-md-4.col-md-offset-4
+            a.lightbox.big-info-btn.btn-block href="#provozni-rad" data-lightbox-type="inline" Zobrazit provozní řád
+    
 
     section.lgray#rezervace
       .container
@@ -429,29 +433,37 @@ html
         form.booking-form
           .row
             .col-md-4
-              input.form-control placeholder="Jméno a přijmení"
+              input.form-control required="required"
+              label placeholder="Jméno a přijmení" alt="Second Placeholder Label" 
             .col-md-4
-              input.form-control placeholder="Telefoní číslo"
+              input.form-control required="required"
+              label placeholder="Telefoní číslo"
             .col-md-4
-              input.form-control placeholder="E-mailova adresa"
+              input.form-control required="required"
+              label placeholder="E-mailova adresa"
           .row
             .col-md-3
-              input.form-control placeholder="Počet dospělých"
+              input.form-control required="required"
+              label placeholder="Počet dospělých"
             .col-md-3
-              input.form-control placeholder="Počet dětí"
+              input.form-control required="required"
+              label placeholder="Počet dětí"
             .col-md-6
-              input.form-control placeholder="Bydliště"
+              input.form-control required="required"
+              label placeholder="Bydliště"
           .row.input-daterange
             .col-md-4
               .input-group
-                input.form-control.datepicker placeholder="Začátek pobytu"
-                span  class="input-group-addon"
+                span class="input-group-addon"
                   i.icon-calendar
+                input.form-control.datepicker required="required"
+                label placeholder="Začátek pobytu"
             .col-md-4
               .input-group
-                input.form-control.datepicker placeholder="Konec pobytu"
-                span  class="input-group-addon"
+                span class="input-group-addon"
                   i.icon-calendar
+                input.form-control.datepicker required="required"
+                label placeholder="Konec pobytu"
             .col-md-4
               a.lightbox.big-info-btn.btn-block href="#obsazenost" data-lightbox-type="inline" Zobrazit dostupnost
           .row
@@ -504,14 +516,18 @@ html
           .row
             .col-md-10.col-md-offset-1
               .col-md-4
-                input.form-control placeholder="Jméno a přijmení"
+                input.form-control required="required"
+                label placeholder="Jméno a přijmení"
               .col-md-4
-                input.form-control placeholder="Emailova adresa"
+                input.form-control required="required"
+                label placeholder="Emailova adresa"
               .col-md-4
-                input.form-control placeholder="Telefon"
+                input.form-control required="required"
+                label placeholder="Telefon"
           .row
             .col-md-10.col-md-offset-1
-              textarea.form-control placeholder="Zadejte vas dotaz"
+              textarea.form-control required="required"
+              label placeholder="Zadejte vas dotaz"
           .row
             .col-md-10.col-md-offset-1
               .col-md-4.col-md-offset-4.text-center
@@ -528,79 +544,82 @@ html
             p.text-right Design and realization by Ceda_
 
 #provozni-rad style="display: none"       
-  p align="center" 
-    strong
-      u Provozní řád pro ubytování v apartmánu č. 22 v Rezidenci Club Canada, Lipno nad Vltavou
-  p align="center" 
-    strong
-      u
-  p
-    | Kontaktní osoba v místě: Tereza Kovaříková, tel: 725 721 622
-  p
-    | Kontakt na majitele apartmánu: Hana Maxová, tel: 733 500 574
-  p
-    strong 1.
-    strong Příjezd na místo, předání apartmánu
-  p
-    | Apartmán je klientovi předáván k užívání v den příjezdu zpravidla v odpoledních hodinách, přesněji v čase dohodnutým s kontaktní osobou, viz výše.
-  p
-    | Předáním apartmánu k užívání se rozumí předání klíčů a připraveného apartmánu vč. ložního prádla, ručníků a osušek podle počtu objednaných osob.
-  p
-    | Při předání apartmánu k užívání je klient povinen předložit občanský průkaz a vyplnit seznam ubytovaných osob do ubytovací knihy.
-  p
-    | Prosíme klienty, aby neprodleně po předání apartmánu a před zahájením jeho užívání provedli kontrolu vybavení apartmánu a případné závady neprodleně
-    | ohlásili osobě předávající apartmán, nebo telefonicky majiteli apartmánu, abychom závady odstranili v co nejkratší lhůtě, s přihlédnutím k jejich povaze.
-  p
-    strong 2.
-    strong Spotřebiče a jejich užívání:
-  p
-    | Při předání apartmánu klient může zapnout spotřebiče, které jsou v době, kdy apartmán není obýván, vypnuty:
-  ul
-    li přímotop – ručně regulovatelný
-    li podlahové topení v koupelně
-    li vytápěcí žebřík v koupelně
-    li ledničku, varnou konvici, kávovar aj.
-  p
-    strong 3.
-    strong Užívání apartmánu
-  p
-    | Klient nesmí bez souhlasu pronajímatele přemisťovat vybavení, provádět jakékoliv úpravy a zasahovat do elektrické sítě nebo jiné instalace apartmánu.
-    | Apartmán je nekuřácký, psi a jiná zvířata nejsou v apartmánu povolena.
-  p
-    | Upozornění – elektrický přímotop ničím nezakrývejte, zbavíte je funkčnosti, ale především hrozí nebezpečí požáru! Pokud během pobytu dojde k poničení
-    | vybavení apartmánu klientem (rozbité nádobí, apod.), klient neprodleně nahlásí vzniklé škody pronajímateli.
-  p
-    | Klient je povinen předat apartmán ve stejném stavu, v jakém byl přebírán. Po odjezdu klienta bude zajištěn ze strany poskytovatele běžný úklid, přesto by
-    | měl klient zajistit umytí a vyskládání nádobí a další vybavení kuchyně tak, jak bylo v době převzetí apartmánu. Klient je povinen vyklidit všechny své věci
-    | včetně potravin. Pro odpadky jsou určeny popelnice umístěny před apartmánovým domem. Před odjezdem z apartmánu klient vypne následující spotřebiče:
-  ul
-    li přímotop
-    li podlahové topení v koupelně
-    li vytápěcí žebřík v koupelně
-    li vyprázdnit, vypnout a otevřít lednici
-  p
-    | Převzetí apartmánu probíhá v den odjezdu, zpravidla mezi 9:00-10:00, pokud není dohodnuto jinak. Odpovědná osoba zkontroluje apartmán a převezme zpět klíče
-    | od apartmánu a budovy.
-  p
-    | Výměna ložního prádla a ručníků v průběhu pobytu je možná u pověřené osoby, která apartmán klientovi předala, a to po předchozí telefonické domluvě s ní.
-  p
-    strong 4.
-    strong Užívání společných prostor apartmánového domu
-  p
-    | Ve všech prostorách apartmánového domu je přísný zákaz kouření.
-  p
-    | Parkování je k dispozici na parkovišti před Rezidencí Club Canada. Není nutné parkovat podle vyznačených čísel, parkujte, kde je místo. Parkoviště je
-    | hlídané kamerovým systémem.
-  p
-    | K uložení lyží, kol a dalšího sportovního vybavení slouží výhradně stojany ve vestibulu u hlavního vchodu do budovy. Od vstupu do budovy mají ubytovaní
-    | hosté klíč. Tento prostor je monitorovaný kamerovým systémem. Za majetek uložený v budově pronajímatel neodpovídá.
-  p
-    | V případě poškození vybavení apartmánu nebo společných prostor apartmánového domu nebo za ztrátu klíčů je pronajímatel oprávněn po klientovi požadovat
-    | odpovídající finanční náhradu.
-  p
-    strong
-  p
-    | Lipno nad Vltavou 1. 2. 2015
+  .booking-calendar
+    h2 
+      | Provozní řád pro ubytování v apartmánu č. 22  
+      br
+      span v Rezidenci Club Canada, Lipno nad Vltavou
+  
+    p align="center" 
+      strong
+        u
+    p
+      | Kontaktní osoba v místě: Tereza Kovaříková, tel: 725 721 622
+    p
+      | Kontakt na majitele apartmánu: Hana Maxová, tel: 733 500 574
+    p
+      strong 1.
+      strong Příjezd na místo, předání apartmánu
+    p
+      | Apartmán je klientovi předáván k užívání v den příjezdu zpravidla v odpoledních hodinách, přesněji v čase dohodnutým s kontaktní osobou, viz výše.
+    p
+      | Předáním apartmánu k užívání se rozumí předání klíčů a připraveného apartmánu vč. ložního prádla, ručníků a osušek podle počtu objednaných osob.
+    p
+      | Při předání apartmánu k užívání je klient povinen předložit občanský průkaz a vyplnit seznam ubytovaných osob do ubytovací knihy.
+    p
+      | Prosíme klienty, aby neprodleně po předání apartmánu a před zahájením jeho užívání provedli kontrolu vybavení apartmánu a případné závady neprodleně
+      | ohlásili osobě předávající apartmán, nebo telefonicky majiteli apartmánu, abychom závady odstranili v co nejkratší lhůtě, s přihlédnutím k jejich povaze.
+    p
+      strong 2.
+      strong Spotřebiče a jejich užívání:
+    p
+      | Při předání apartmánu klient může zapnout spotřebiče, které jsou v době, kdy apartmán není obýván, vypnuty:
+    ul
+      li přímotop – ručně regulovatelný
+      li podlahové topení v koupelně
+      li vytápěcí žebřík v koupelně
+      li ledničku, varnou konvici, kávovar aj.
+    p
+      strong 3.
+      strong Užívání apartmánu
+    p
+      | Klient nesmí bez souhlasu pronajímatele přemisťovat vybavení, provádět jakékoliv úpravy a zasahovat do elektrické sítě nebo jiné instalace apartmánu.
+      | Apartmán je nekuřácký, psi a jiná zvířata nejsou v apartmánu povolena.
+    p
+      | Upozornění – elektrický přímotop ničím nezakrývejte, zbavíte je funkčnosti, ale především hrozí nebezpečí požáru! Pokud během pobytu dojde k poničení
+      | vybavení apartmánu klientem (rozbité nádobí, apod.), klient neprodleně nahlásí vzniklé škody pronajímateli.
+    p
+      | Klient je povinen předat apartmán ve stejném stavu, v jakém byl přebírán. Po odjezdu klienta bude zajištěn ze strany poskytovatele běžný úklid, přesto by
+      | měl klient zajistit umytí a vyskládání nádobí a další vybavení kuchyně tak, jak bylo v době převzetí apartmánu. Klient je povinen vyklidit všechny své věci
+      | včetně potravin. Pro odpadky jsou určeny popelnice umístěny před apartmánovým domem. Před odjezdem z apartmánu klient vypne následující spotřebiče:
+    ul
+      li přímotop
+      li podlahové topení v koupelně
+      li vytápěcí žebřík v koupelně
+      li vyprázdnit, vypnout a otevřít lednici
+    p
+      | Převzetí apartmánu probíhá v den odjezdu, zpravidla mezi 9:00-10:00, pokud není dohodnuto jinak. Odpovědná osoba zkontroluje apartmán a převezme zpět klíče
+      | od apartmánu a budovy.
+    p
+      | Výměna ložního prádla a ručníků v průběhu pobytu je možná u pověřené osoby, která apartmán klientovi předala, a to po předchozí telefonické domluvě s ní.
+    p
+      strong 4.
+      strong Užívání společných prostor apartmánového domu
+    p
+      | Ve všech prostorách apartmánového domu je přísný zákaz kouření.
+    p
+      | Parkování je k dispozici na parkovišti před Rezidencí Club Canada. Není nutné parkovat podle vyznačených čísel, parkujte, kde je místo. Parkoviště je
+      | hlídané kamerovým systémem.
+    p
+      | K uložení lyží, kol a dalšího sportovního vybavení slouží výhradně stojany ve vestibulu u hlavního vchodu do budovy. Od vstupu do budovy mají ubytovaní
+      | hosté klíč. Tento prostor je monitorovaný kamerovým systémem. Za majetek uložený v budově pronajímatel neodpovídá.
+    p
+      | V případě poškození vybavení apartmánu nebo společných prostor apartmánového domu nebo za ztrátu klíčů je pronajímatel oprávněn po klientovi požadovat
+      | odpovídající finanční náhradu.
+    p
+      strong
+    p
+      | Lipno nad Vltavou 1. 2. 2015
   
   
 
@@ -689,7 +708,7 @@ html
             a href="#" 
           
     .col-md-3
-      h3 Unor
+      h3 Únor
       table.table
         tr
           td 
@@ -768,7 +787,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Brezen
+      h3 Březen
       table.table
         tr
           td 
@@ -926,7 +945,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Kveten
+      h3 Květen
       table.table
         tr
           td 
@@ -1005,7 +1024,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Cerven
+      h3 Červen
       table.table
         tr
           td 
@@ -1084,7 +1103,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Cervene
+      h3 Červenec
       table.table
         tr
           td 
@@ -1242,7 +1261,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Zari
+      h3 Září
       table.table
         tr
           td 
@@ -1321,7 +1340,7 @@ html
             a href="#" 
       
     .col-md-3
-      h3 Rijen
+      h3 Říjen
       table.table
         tr
           td 
@@ -1559,7 +1578,7 @@ html
     hr
     span.caption 
       i.busy.icon-square
-      | obsazeny termin
+      | Obsazený termín
     span.caption
       i.reserved.icon-square
-      | rezervovany termin
+      | Rezervovaný termín
